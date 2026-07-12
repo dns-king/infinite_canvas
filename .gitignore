@@ -1,0 +1,9 @@
+# Local runtime logs that may contain machine-specific paths or errors
+backend/uvicorn.log
+backend/uvicorn.err
+frontend/vite.log
+frontend/vite.err
+
+# Environment files
+.env
+.env.*

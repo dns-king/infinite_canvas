@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfiniteCanvas</title>
+  </head>
+  <body>
+    <canvas id="world"></canvas>
+    <div id="crosshair" aria-hidden="true"></div>
+    <section id="hud" aria-label="InfiniteCanvas controls">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <div>
+          <h1>InfiniteCanvas</h1>
+          <p id="status">Starting renderer</p>
+        </div>
+      </div>
+      <div class="biome-switch" role="group" aria-label="Biome">
+        <button class="active" data-biome="forest" type="button">Forest</button>
+        <button data-biome="desert" type="button">Desert</button>
+        <button data-biome="ocean" type="button">Ocean</button>
+        <button data-biome="alien" type="button">Alien</button>
+      </div>
+      <div class="metric-strip">
+        <span><b id="loaded-count">0</b> loaded</span>
+        <span><b id="pending-count">0</b> pending</span>
+        <span><b id="coord-readout">0,0</b></span>
+      </div>
+    </section>
+    <aside id="map-panel" aria-label="Tile map">
+      <canvas id="minimap" width="168" height="168"></canvas>
+    </aside>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+

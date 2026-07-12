@@ -1,0 +1,2 @@
+"""InfiniteCanvas backend package."""
+
