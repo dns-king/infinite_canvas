@@ -19,6 +19,8 @@ flowchart LR
   Cache --> Grid
 ```
 
+![Forrest](biome-gif.gif)
+
 ## What's Implemented
 
 - Three.js infinite terrain grid with plane recycling around the camera.
