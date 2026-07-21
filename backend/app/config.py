@@ -20,8 +20,8 @@ def _float_env(name: str, default: float) -> float:
 
 @dataclass(frozen=True)
 class Settings:
-    tile_size: int = _int_env("INFINITE_CANVAS_TILE_SIZE", 256)
-    context_px: int = _int_env("INFINITE_CANVAS_CONTEXT_PX", 64)
+    tile_size: int = _int_env("INFINITE_CANVAS_TILE_SIZE", 512)
+    context_px: int = _int_env("INFINITE_CANVAS_CONTEXT_PX", 128)
     generator: str = os.getenv("INFINITE_CANVAS_GENERATOR", "procedural").lower()
     model_id: str = os.getenv("INFINITE_CANVAS_MODEL_ID", "runwayml/stable-diffusion-v1-5")
     inpaint_model_id: str = os.getenv(
